@@ -1,0 +1,186 @@
+{
+  "triedTastedLoved": [
+    {
+      "id": "1",
+      "name": "Paneer Butter Masala",
+      "description": "Rich and creamy paneer in tomato gravy",
+      "price": 220,
+      "imageUrl": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.6,
+      "isVeg": true
+    },
+    {
+      "id": "2",
+      "name": "Chicken Biryani",
+      "description": "Fragrant basmati rice with marinated chicken",
+      "price": 280,
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3Di",
+      "rating": 4.8,
+      "isVeg": false
+    },
+    {
+      "id": "3",
+      "name": "Veg Manchurian",
+      "description": "Crispy vegetable balls tossed in spicy sauce",
+      "price": 180,
+      "imageUrl": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.4,
+      "isVeg": true
+    },
+    {
+      "id": "4",
+      "name": "Chole Bhature",
+      "description": "Spiced chickpeas served with fried bread",
+      "price": 150,
+      "imageUrl": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.5,
+      "isVeg": true
+    },
+    {
+      "id": "5",
+      "name": "Mutton Rogan Josh",
+      "description": "Kashmiri-style mutton curry",
+      "price": 320,
+      "imageUrl": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.7,
+      "isVeg": false
+    },
+    {
+      "id": "6",
+      "name": "Palak Paneer",
+      "description": "Cottage cheese cooked in spinach gravy",
+      "price": 210,
+      "imageUrl": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.3,
+      "isVeg": true
+    },
+    {
+      "id": "7",
+      "name": "Egg Curry",
+      "description": "Boiled eggs in spicy onion-tomato gravy",
+      "price": 160,
+      "imageUrl": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.2,
+      "isVeg": false
+    },
+    {
+      "id": "8",
+      "name": "Dal Tadka",
+      "description": "Yellow dal tempered with garlic and spices",
+      "price": 140,
+      "imageUrl": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpga",
+      "rating": 4.4,
+      "isVeg": true
+    },
+    {
+      "id": "9",
+      "name": "Fish Fry",
+      "description": "Crispy fried fish with lemon and onions",
+      "price": 260,
+      "imageUrl": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.6,
+      "isVeg": false
+    },
+    {
+      "id": "10",
+      "name": "Masala Dosa",
+      "description": "South Indian dosa filled with spicy potatoes",
+      "price": 130,
+      "imageUrl": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.5,
+      "isVeg": true
+    }
+  ],
+  "lookingForMore": [
+    {
+      "id": "11",
+      "name": "Margherita Pizza",
+      "description": "Classic Italian pizza with mozzarella and basil",
+      "price": 200,
+      "image": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.3,
+      "isVeg": true
+    },
+    {
+      "id": "12",
+      "name": "Butter Naan",
+      "description": "Soft and buttery Indian flatbread",
+      "price": 50,
+      "image": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.5,
+      "isVeg": true
+    },
+    {
+      "id": "13",
+      "name": "Grilled Chicken",
+      "description": "Grilled chicken with Indian spices",
+      "price": 300,
+      "image": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.7,
+      "isVeg": false
+    },
+    {
+      "id": "14",
+      "name": "Veg Pulao",
+      "description": "Basmati rice cooked with vegetables and spices",
+      "price": 170,
+      "image": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.2,
+      "isVeg": true
+    },
+    {
+      "id": "15",
+      "name": "Rajma Chawal",
+      "description": "Kidney beans curry served with rice",
+      "price": 160,
+      "image": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.4,
+      "isVeg": true
+    },
+    {
+      "id": "16",
+      "name": "Fried Rice",
+      "description": "Chinese-style fried rice with vegetables",
+      "price": 150,
+      "image": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.3,
+      "isVeg": true
+    },
+    {
+      "id": "17",
+      "name": "Tandoori Chicken",
+      "description": "Chicken marinated in yogurt and spices, grilled",
+      "price": 280,
+      "image": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.6,
+      "isVeg": false
+    },
+    {
+      "id": "18",
+      "name": "Idli Sambar",
+      "description": "Steamed rice cakes with lentil soup",
+      "price": 110,
+      "image": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.5,
+      "isVeg": true
+    },
+    {
+      "id": "19",
+      "name": "Gobi Manchurian",
+      "description": "Fried cauliflower in tangy Indo-Chinese sauce",
+      "price": 170,
+      "image": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.2,
+      "isVeg": true
+    },
+    {
+      "id": "20",
+      "name": "Chicken 65",
+      "description": "Spicy deep-fried South Indian chicken",
+      "price": 220,
+      "image": "https://thumbs.dreamstime.com/b/cupcake-featuring-swirl-light-blue-light-purple-frosting-topped-colorful-sprinkles-sits-beautifully-pink-350547483.jpg",
+      "rating": 4.6,
+      "isVeg": false
+    }
+  ]
+}
