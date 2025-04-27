@@ -11,28 +11,30 @@ struct TTLCardView: View {
     let card: TTLCardViewModel
     @EnvironmentObject var cartVM: CartViewModel
     @State private var isAdded = false  // Track if the item has been added to the cart
-    @State private var quantity = 1  // Track quantity of the item
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
             ZStack(alignment: .topLeading) {
                 AsyncImage(url: URL(string: card.imageUrl)) { phase in
-                    if let image = phase.image {
+                    switch phase {
+                    case .success(let image):
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 150, height: 140)
                             .clipped()
-                            .clipShape(
-                                RoundedCorner(radius: 20, corners: [.topLeft, .topRight])
-                            )
-                    } else if phase.error != nil {
+                            .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                    case .failure:
                         Color.red
                             .frame(width: 150, height: 140)
                             .cornerRadius(10)
-                    } else {
+                    case .empty:
                         ProgressView()
                             .frame(width: 150, height: 140)
+                    @unknown default:
+                        Color.gray
+                            .frame(width: 150, height: 140)
+                            .cornerRadius(10)
                     }
                 }
                 .overlay(
@@ -51,9 +53,7 @@ struct TTLCardView: View {
                                 .padding(.bottom, 6)
                         }
                         .background(Color.violet2)
-                        .clipShape(
-                            RoundedCorner(radius: 20, corners: [.bottomLeft, .bottomRight])
-                        )
+                        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                         .padding(.leading, 10)
                         
                         Spacer()
@@ -79,7 +79,6 @@ struct TTLCardView: View {
                     },
                     alignment: .bottomLeading
                 )
-                
             }
             
             Spacer()
@@ -101,24 +100,18 @@ struct TTLCardView: View {
                         Text("₹\(card.price)")
                             .font(.system(size: 12, weight: .semibold))
                             .foregroundColor(.black)
-                        
                     }
                     
                     Spacer()
                     
                     VStack {
-                        if isAdded {
+                        let quantity = cartVM.getQuantity(for: FoodItem(from: card)) // Get the quantity from the cartVM
+
+                        if quantity > 0 {
                             // Show Added state with quantity buttons
-//                            VStack(alignment: .trailing, spacing: 0)
                             HStack(spacing: 0) {
                                 Button(action: {
-                                    if quantity > 1 {
-                                        quantity -= 1
-                                        cartVM.decreaseQuantity(for: FoodItem(from: card))
-                                    } else {
-                                        isAdded = false
-                                        quantity = 0
-                                    }
+                                    cartVM.decreaseQuantity(for: FoodItem(from: card))
                                 }) {
                                     Image(systemName: "minus")
                                         .foregroundColor(.green)
@@ -127,16 +120,15 @@ struct TTLCardView: View {
                                 Text("\(quantity)")
                                     .font(.headline)
                                     .frame(minWidth: 10, alignment: .center)
-
+                                
                                 Button(action: {
-                                    quantity += 1
                                     cartVM.addToCart(food: FoodItem(from: card))
                                 }) {
                                     Image(systemName: "plus")
                                         .foregroundColor(.green)
                                 }
                             }
-                            .padding(.horizontal,5)
+                            .padding(.horizontal, 5)
                             .background(Color.green.opacity(0.1))
                             .cornerRadius(8)
                             .overlay(
